@@ -7,19 +7,19 @@ import { NavDropdown } from './menu-components';
 const adminMenuItems = () => (
   <>
     <MenuItem icon="users" to="/admin/user-management">
-      User management
+      KULLANNICI YÖNETİMİ
     </MenuItem>
     <MenuItem icon="tachometer-alt" to="/admin/metrics">
-      Metrics
+      METRİK
     </MenuItem>
     <MenuItem icon="heart" to="/admin/health">
-      Health
+      SAĞLIK
     </MenuItem>
     <MenuItem icon="cogs" to="/admin/configuration">
-      Configuration
+      KONFİGÜRASYONLAR
     </MenuItem>
     <MenuItem icon="tasks" to="/admin/logs">
-      Logs
+      LOGLAR
     </MenuItem>
     {/* jhipster-needle-add-element-to-admin-menu - JHipster will add entities to the admin menu here */}
   </>
@@ -33,7 +33,7 @@ const openAPIItem = () => (
 
 const databaseItem = () => (
   <DropdownItem tag="a" href="./h2-console/" target="_tab">
-    <FontAwesomeIcon icon="database" fixedWidth /> Database
+    <FontAwesomeIcon icon="database" fixedWidth /> VERİTABANI
   </DropdownItem>
 );
 

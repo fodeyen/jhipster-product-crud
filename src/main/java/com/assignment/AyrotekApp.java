@@ -20,18 +20,18 @@ import tech.jhipster.config.JHipsterConstants;
 
 @SpringBootApplication
 @EnableConfigurationProperties({ LiquibaseProperties.class, ApplicationProperties.class })
-public class AssignmentApp {
+public class AyrotekApp {
 
-    private static final Logger log = LoggerFactory.getLogger(AssignmentApp.class);
+    private static final Logger log = LoggerFactory.getLogger(AyrotekApp.class);
 
     private final Environment env;
 
-    public AssignmentApp(Environment env) {
+    public AyrotekApp(Environment env) {
         this.env = env;
     }
 
     /**
-     * Initializes assignment.
+     * Initializes ayrotek.
      * <p>
      * Spring profiles can be configured with a program argument --spring.profiles.active=your-active-profile
      * <p>
@@ -64,7 +64,7 @@ public class AssignmentApp {
      * @param args the command line arguments.
      */
     public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(AssignmentApp.class);
+        SpringApplication app = new SpringApplication(AyrotekApp.class);
         DefaultProfileUtil.addDefaultProfile(app);
         Environment env = app.run(args).getEnvironment();
         logApplicationStartup(env);

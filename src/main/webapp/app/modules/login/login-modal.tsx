@@ -35,15 +35,15 @@ const LoginModal = (props: ILoginModalProps) => {
             <Col md="12">
               {loginError ? (
                 <Alert color="danger" data-cy="loginError">
-                  <strong>Failed to sign in!</strong> Please check your credentials and try again.
+                  <strong>Hatalı giriş işlemi</strong> Yeniden deneyiniz
                 </Alert>
               ) : null}
             </Col>
             <Col md="12">
               <ValidatedField
                 name="username"
-                label="Username"
-                placeholder="Your username"
+                label="Kullanıcı Adı"
+                placeholder=""
                 required
                 autoFocus
                 data-cy="username"
@@ -55,8 +55,8 @@ const LoginModal = (props: ILoginModalProps) => {
               <ValidatedField
                 name="password"
                 type="password"
-                label="Password"
-                placeholder="Your password"
+                label="Parola"
+                placeholder=""
                 required
                 data-cy="password"
                 validate={{ required: 'Password cannot be empty!' }}
@@ -64,25 +64,25 @@ const LoginModal = (props: ILoginModalProps) => {
                 error={errors.password}
                 isTouched={touchedFields.password}
               />
-              <ValidatedField name="rememberMe" type="checkbox" check label="Remember me" value={true} register={register} />
+              <ValidatedField name="rememberMe" type="checkbox" check label="Beni Hatırla" value={true} register={register} />
             </Col>
           </Row>
           <div className="mt-1">&nbsp;</div>
           <Alert color="warning">
             <Link to="/account/reset/request" data-cy="forgetYourPasswordSelector">
-              Did you forget your password?
+              Parolanı unuttun mu yoksa?
             </Link>
           </Alert>
           <Alert color="warning">
-            <span>You don&apos;t have an account yet?</span> <Link to="/account/register">Register a new account</Link>
+            <span>Hesabın yok mu?</span> <Link to="/account/register">Haydi kaydol!</Link>
           </Alert>
         </ModalBody>
         <ModalFooter>
           <Button color="secondary" onClick={handleClose} tabIndex={1}>
-            Cancel
+            İPTAL
           </Button>{' '}
           <Button color="primary" type="submit" data-cy="submit">
-            Sign in
+            GİRİŞ
           </Button>
         </ModalFooter>
       </Form>

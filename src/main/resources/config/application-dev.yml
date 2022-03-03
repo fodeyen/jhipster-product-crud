@@ -32,8 +32,8 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:file:./target/h2db/db/assignment;DB_CLOSE_DELAY=-1
-    username: assignment
+    url: jdbc:h2:file:./target/h2db/db/ayrotek;DB_CLOSE_DELAY=-1
+    username: ayrotek
     password:
     hikari:
       poolName: Hikari
@@ -100,7 +100,7 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 and be at least 256 bits long (you can type `openssl rand -base64 64` on your command line to generate a 512 bits one)
-        base64-secret: NzM3YzEyN2U3OTFjMjRmOThlNmIyODRmOWQxYmJlNGNhY2I2MzBkOWQwMDRhM2M4NTI5YThjZWY4YzE5ODY0MTlmMzk1OGI5NWMyNGI1NGQzMjA5ZGM0MDYxYWI3ZjQ1NDllYTlmNWYwM2JmYjUxNTUwMDNhZGUzOGJlNTgxNzI=
+        base64-secret: OGFjZDU2MTg4YjFkYWE0MzZiYWIyNGUyODQ3YWYyN2MyZjc0MDFkODA0ZjkwZTA4Y2VmOTNiOTkzYTk1Y2RiYThkYzc0ZDBlY2UzZDllNjI4Y2IwNDU3YmI3OTVlNWE4MzFlZDdkZjIzODM1YTY0MWQxMDY2MzFjMGFlNzZiMDQ=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 2592000

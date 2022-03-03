@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20220301180759",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "brand",
+  "fields": [
+    {
+      "fieldName": "brandId",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "brandName",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Brand",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "product",
+      "otherEntityRelationshipName": "brandId",
+      "relationshipName": "product",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

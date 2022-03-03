@@ -1,0 +1,25 @@
+entity Product{
+	ProductId Long required unique
+    ProductCode String required minlength(5) maxlength(15)
+    ProductName String,
+    StockQuantity Double
+    UnitPrice Double
+}
+
+entity Brand{
+	BrandId Long required
+    BrandName String
+}
+
+entity Category{
+	CategoryId Long required
+    CategoryName String
+}
+
+relationship OneToMany{
+	Brand to Product{BrandId}
+}
+
+relationship OneToMany{
+	Category to Product{CategoryId}
+}

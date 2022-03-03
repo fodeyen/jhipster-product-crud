@@ -1,6 +1,6 @@
 package com.assignment;
 
-import com.assignment.AssignmentApp;
+import com.assignment.AyrotekApp;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -12,6 +12,6 @@ import org.springframework.boot.test.context.SpringBootTest;
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@SpringBootTest(classes = AssignmentApp.class)
+@SpringBootTest(classes = AyrotekApp.class)
 public @interface IntegrationTest {
 }
